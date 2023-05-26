@@ -1,20 +1,15 @@
-<<<<<<< HEAD
 import { fileURLToPath, URL } from 'node:url'
 
-=======
->>>>>>> refs/remotes/origin/main
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
-<<<<<<< HEAD
+  plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
-=======
->>>>>>> refs/remotes/origin/main
 })
